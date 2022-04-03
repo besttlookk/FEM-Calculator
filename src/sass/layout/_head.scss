@@ -1,0 +1,25 @@
+@use "../utils" as *;
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      font-size: rem(10);
+      text-transform: uppercase;
+      color: var(--col-text-result);
+    }
+  }
+}
+
+.logo {
+  font-size: rem(28);
+  font-weight: bold;
+  color: var(--col-text-result);
+}

@@ -1,0 +1,68 @@
+@use "../utils/" as *;
+
+.toggle {
+  position: relative;
+  display: flex;
+  width: 4.5rem;
+  height: 1.6rem;
+  border-radius: 100px;
+  background-color: var(--col-bg-toggle);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &__numbers {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: -20px;
+    left: 0;
+    width: 100%;
+
+    span {
+      color: var(--col-text-result);
+      font-size: rem(13);
+      font-weight: 700;
+    }
+  }
+
+  &__switch {
+    position: absolute;
+    top: 3px;
+    transition: all 0.5s;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--col-bg-key-tertiary);
+    cursor: pointer;
+
+    &.left {
+      left: 5px;
+    }
+
+    &.center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &.right {
+      left: calc(100% - 5px);
+      transform: translateX(-100%);
+    }
+  }
+
+  &__section {
+    width: 33%;
+
+    &:nth-child(3) {
+      border-radius: 50% 0% 0 50%;
+    }
+
+    &:last-child {
+      border-radius: 0 50% 50% 0;
+    }
+  }
+}

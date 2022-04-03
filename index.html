@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.ts" defer></script>
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main>
+      <!-- top row -->
+      <div class="head">
+        <div class="head__left">
+          <p class="logo">calc</p>
+        </div>
+
+        <div class="head__right">
+          <p>Theme</p>
+          <!-- toggle here-->
+          <div class="toggle">
+            <div class="toggle__numbers">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="toggle__switch left" id="toggle-switch"></div>
+            <div class="toggle__section" data-section="1"></div>
+            <div class="toggle__section" data-section="2"></div>
+            <div class="toggle__section" data-section="3"></div>
+          </div>
+        </div>
+      </div>
+      <!-- top row ends here -->
+      <!-- Result starts here -->
+      <div class="result">
+        <span class="result__output" id="output" data-previous-operand></span>
+        <span class="result__operator" id="operator"></span>
+        <span class="result__input" id="input" data-current-operand></span>
+      </div>
+
+      <!-- end of result -->
+      <!-- start of input -->
+      <div class="input">
+        <div class="input__primary" data-number>7</div>
+        <div class="input__primary" data-number>8</div>
+        <div class="input__primary" data-number>9</div>
+        <div class="input__secondary" data-del>DEL</div>
+        <div class="input__primary" data-number>4</div>
+        <div class="input__primary" data-number>5</div>
+        <div class="input__primary" data-number>6</div>
+        <div class="input__primary" data-operation>+</div>
+        <div class="input__primary" data-number>1</div>
+        <div class="input__primary" data-number>2</div>
+        <div class="input__primary" data-number>3</div>
+        <div class="input__primary" data-operation>-</div>
+        <div class="input__primary" data-number>.</div>
+        <div class="input__primary" data-number>0</div>
+        <div class="input__primary" data-operation="">/</div>
+        <div class="input__primary" data-operation>x</div>
+        <div class="input__span-reset input__secondary" data-reset>Reset</div>
+        <div class="input__span-equal input__tertiary" data-equals>=</div>
+      </div>
+    </main>
+  </body>
+</html>

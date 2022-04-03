@@ -1,0 +1,47 @@
+:root {
+  --col-bg-main: hsl(222, 26%, 31%);
+  --col-bg-screen: hsl(224, 36%, 15%);
+  --col-bg-toggle: hsl(223, 31%, 20%);
+  --col-bg-key-secondary: hsl(225, 21%, 49%);
+  --col-sw-key-secondary: hsl(224, 28%, 35%);
+  --col-bg-key-tertiary: hsl(6, 63%, 50%); // also for toggle
+
+  --col-sw-key-tertiary: hsl(6, 70%, 34%);
+  --col-bg-key-primary: hsl(30, 25%, 89%);
+  --col-sw-key-primary: hsl(28, 16%, 65%);
+  --col-text-result: white;
+  --col-text-key: hsl(221, 14%, 31%);
+  --col-text-white: hsl(0, 0, 100%);
+}
+
+// theme-2
+html[data-theme="2"] {
+  --col-bg-main: hsl(0, 0%, 90%);
+  --col-bg-screen: hsl(0, 0%, 93%);
+  --col-bg-toggle: hsl(0, 5%, 81%);
+  --col-bg-key-secondary: hsl(185, 42%, 37%);
+  --col-sw-key-secondary: hsl(185, 58%, 25%);
+  --col-bg-key-tertiary: hsl(25, 98%, 40%); // also for toggle
+  --col-sw-key-tertiary: hsl(25, 99%, 27%);
+  --col-bg-key-primary: hsl(45, 7%, 89%);
+  --col-sw-key-primary: hsl(35, 11%, 61%);
+  --col-text-result: hsl(60, 10%, 19%);
+  --col-text-key: hsl(60, 10%, 19%);
+  --col-text-white: hsl(0, 0, 100%);
+}
+
+// theme-3
+html[data-theme="3"] {
+  --col-bg-main: hsl(268, 75%, 9%);
+  --col-bg-screen: hsl(268, 71%, 12%);
+  --col-bg-toggle: hsl(268, 71%, 12%);
+  --col-bg-key-secondary: hsl(281, 89%, 26%);
+  --col-sw-key-secondary: hsl(285, 91%, 52%);
+  --col-bg-key-tertiary: hsl(176, 100%, 44%); // also for toggle
+  --col-sw-key-tertiary: hsl(177, 92%, 70%);
+  --col-bg-key-primary: hsl(268, 47%, 21%);
+  --col-sw-key-primary: hsl(290, 70%, 36%);
+  --col-text-result: hsl(52, 100%, 62%);
+  --col-text-key: hsl(52, 100%, 62%);
+  --col-text-white: hsl(0, 0, 100%);
+}
