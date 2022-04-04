@@ -69,6 +69,8 @@ class Calculator {
 
   chooseOperation(operation: string) {
     //! do nothing if there is no current operand
+    if (this.currentOperand === "" && this.operation !== undefined)
+      this.operation = operation;
     if (this.currentOperand === "") return;
     // ! if there is previous operand do calculation
     if (this.previousOperand !== "") {
